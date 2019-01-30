@@ -1,0 +1,148 @@
+<html lang="en">
+    <head>
+        <!-- General Information -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" title="standard" href="css/layout.css" />
+        <link rel="stylesheet" type="text/css" title="standard" href="css/landing.css" />
+
+        <!-- Site Information -->
+        <title>Brothel Booking System</title>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Brothel Booking System</h1>
+                
+                <nav>
+                    <a href="care.html">Customer Care</a>
+                    <a href="about.html">About Us</a>
+                </nav>
+            </header>
+            
+            <section id="content">
+                <section class="leftBlock">
+                    <!-- confirmation area -->
+                    <aside id="msg" class="hidden">
+                        <h2 id="msgTitle"></h2>
+                        <ul id="msgList"></ul>
+                    </aside>
+
+                    <article id="booking" class="hidden">
+                        <h2>Booking Quote</h2>
+                        <ul id="bookingList"></ul>
+                    </article>
+                </section>
+                
+                <article class="rightBlock">
+                    <form action="_self" method="POST">
+                        <fieldset>
+                            <legend>Personal Information:</legend>
+
+                            <label>Title:</label>
+                            <select id="title" name="title" onfocus="highlightElement(this.id);" onblur="checkElement(this.id);">
+                                <option value="select">Please select...</option>
+                                <option value="mr">Mr</option>
+                                <option value="ms">Ms</option>
+                                <option value="mrs">Mrs</option>
+                                <option value="miss">Miss</option>
+                                <option value="none">Prefer not to say</option>
+                            </select>
+
+                            <label>Forename(s):</label>
+                            <input id="forename" class="box" type="text" onfocus="highlightElement(this.id);" onblur="checkElement(this.id);"/>
+
+                            <label>Surname(s):</label>
+                            <input id="surname" class="box" type="text" onfocus="highlightElement(this.id);" onblur="checkElement(this.id);"/>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Contact Information:</legend>
+
+                            <label>Email Address:</label>
+                            <input id="email" class="box" type="email" onfocus="highlightElement(this.id);" onblur="checkElement(this.id);"/>
+
+                            <label>Contact Number:</label>
+                            <input id="phone" class="box" type="text" onfocus="highlightElement(this.id);" onblur="checkElement(this.id);"/>
+
+                            <label>Address</label>
+                            <textarea id="address" placeholder="Please enter your address" onfocus="highlightElement(this.id);" onblur="checkElement(this.id);"></textarea>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Booking Information:</legend>
+
+                            <!-- List of Hotels? -->
+                            <!-- fill from js code -->
+                            <label>Venue:</label>
+                            <select id="hotelList" name="hotel" size="1" onfocus="highlightElement(this.id);" onblur="checkElement(this.id);">
+                                <option value="select">Please select...</option>
+                                <!-- to be created by js
+                                <option value="ebony">Ebony Woods</option>
+                                <option value="crimson">Crimson Citadel</option>
+                                <option value="sapphire">Sapphire Suites</option>
+                                -->
+                            </select>
+
+                            <!-- Number of people -->
+                            <label>Number of Party Members:</label>
+                            <input id="party" type="text" onfocus="highlightElement(this.id);" onblur="checkElement(this.id);"/>
+
+                            <!-- Room type -->
+                            <label></label>
+
+                        </fieldset>
+
+                        <fieldset>
+
+                            <label>Your enquiry;</label>
+                            <textarea id="enquiry" name="enquiry" onfocus="highlightElement(this.id);" onblur="checkElement(this.id);"></textarea>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Marketing Preferences</legend>
+                            <p>We would like to stay in touch with you to keep up to date with our latest product news, marketing services and offers. If you would like to receive future information by either of the methods below, please indicate by selecting the option. All information provided will be used and processed in accordance with our Privacy Policy. For more information please see our Privacy Policy.</p>
+
+                            <label>Phone</label>
+                            <input id="phoneMe" name="phoneMe" type="checkbox" />
+
+                            <label>Email</label>
+                            <input id="emailMe" name="emailMe" type="checkbox" />
+
+                            <label>SMS</label>
+                            <input id="textMe" name="textMe" type="checkbox" />
+                        </fieldset>
+
+                        <fieldset>
+                            <ul>
+                                <li>
+                                    <label>I confirm I am over the age of 18</label>
+                                    <input id="age" name="age" type="checkbox" />
+                                </li>
+                                <li>
+                                    <label>I confirm I have read and accept the Terms and Conditions?</label>
+                                    <input id="tc" name="tc" type="checkbox" />
+                                </li>
+                            </ul>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <input type="submit" value="submit" />
+                            <input type="reset" value="reset" />
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+            
+            <footer>
+            </footer>
+        </div>
+    </body>
+    
+    <!-- Scripts -->
+    <script src="jss/script.js"></script>
+    
+</html>

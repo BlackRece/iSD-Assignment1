@@ -1,0 +1,187 @@
+/* General */
+
+* { 
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    z-index: 0;
+    box-sizing: border-box;
+}
+
+/* Global */
+
+div, header, aside, section, article, footer, img {
+    display: block;
+}
+
+body {
+    min-width: 1010px;
+    background-color: black;
+    text-align: center;
+}
+
+#wrapper {
+    background-color: blue;
+    margin: 10px auto;
+    width: 90%;
+    overflow: hidden;
+}
+
+#wrapper, header, section, aside, img {
+    border: black solid 2px;
+    border-radius: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    text-align: left;
+    background-color: lightgray;
+    margin: 20px;
+    height: 150px;
+    overflow: hidden;
+}
+
+header a, header img, div, nav, aside {
+    display: inline-block;
+}
+
+header #logo {
+    margin-left: 40px;
+}
+
+header img {
+    width: 296px;
+    height: 150px;
+
+    /* hack */
+    margin-top: -2px;
+}
+
+header div {
+    float: right;
+    width: 60%;
+}
+
+header h1 {
+    display: none;
+    width: 75%;
+}
+
+header #links {
+    height: 100%;
+}
+
+/* Social */
+
+header #social {
+    border: none;
+    text-align: right;
+    margin: 20px;
+}
+
+header #social img {
+    border: none;
+    border-radius: 0px;
+
+    height: 30px;
+    width: 30px;
+}
+
+/* Content */
+
+.content {
+    background-color: lightgray;
+    border: black solid 2px;
+    border-radius: 25px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    Padding: 20px;
+}
+
+/* Navigation */
+
+nav {
+    width: 100%;
+    padding-top: 30px;
+    padding-right: 10%;
+    text-align: right;
+}
+
+nav a {
+    display: inline-block;
+    height: 50px;
+    width: 30%;
+    
+    /* hack */
+    margin-right: -6px;
+}
+
+nav a#current {
+    background-color: blue;
+    color: whitesmoke;
+}
+
+nav a, nav a:visited {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 10px;
+    color: black;
+
+    /* borders */
+    border: black solid 2px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+nav a:hover {
+    background-color: black;
+    color: lightgray
+}
+
+/* ASIDE */
+aside {
+    width: 90%;
+    padding: 10px;
+}
+
+aside ul li {
+    display: block;
+    
+}
+
+/* Footer */
+
+footer {
+    background-color: lightgray;
+    border: 2px solid black;
+    margin: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* MISC */
+.hidden {
+    display: none;
+}
+
+.highlight {
+    background-color: #f5f576;
+}
+
+.leftBlock {
+    width: 25%;
+}
+
+.rightBlock {
+    width: 75%;
+    /*float: right;*/
+}
